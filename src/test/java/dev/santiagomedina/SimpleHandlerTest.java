@@ -36,7 +36,7 @@ class SimpleHandlerTest {
     @Test
     void shouldReturnUppercaseOfInput(){
         when(context.getFunctionName()).thenReturn("handleRequest");
-        assertEquals("HELLO, WORLD!", simpleHandler.handleRequest("hello, world!", context));
+        assertEquals(6, simpleHandler.handleRequest("6", context).size());
     }
 
 }
